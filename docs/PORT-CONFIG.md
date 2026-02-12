@@ -1,6 +1,6 @@
 # Port Configuration
 
-This document describes the fixed port configuration for the AI-Driven SOC Platform during local development.
+This document describes the fixed port configuration for the AI-Driven SOC Platform during local development and serves as the single source of truth for backend and frontend ports.
 
 ## Default Ports
 
