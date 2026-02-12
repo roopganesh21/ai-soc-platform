@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
+const logRoutes = require('./routes/logRoutes');
 
 const app = express();
 
@@ -31,6 +32,9 @@ app.use(limiter);
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });
 });
+
+// API Routes
+app.use('/api/logs', logRoutes);
 
 // 404 handler
 app.use((req, res, next) => {
